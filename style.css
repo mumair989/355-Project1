@@ -12,6 +12,7 @@ body {
     color: white;
     padding: 50px 30px;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .hero::before{
@@ -36,8 +37,25 @@ body {
     margin: 0;
 }
 
+.filter-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.filter-nav a{
+    text-decoration: none;
+    padding:9px;
+    border: 1px solid rgb(160, 160, 252);
+    border-radius: 4px;
+    margin:4px;
+}
+
 
 footer{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
     height: 50px;
     background:linear-gradient(to left,rgb(204, 0, 255) ,#0059ff);
 }
