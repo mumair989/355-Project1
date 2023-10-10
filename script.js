@@ -1,4 +1,4 @@
-const petPromise = await fetch("https://github.com/mumair989/355-Project1/animals.json")
+const petPromise = await fetch("animals.json")
 const pets = await petPromise.json()
 
 const template = document.querySelector("#animal-card")
