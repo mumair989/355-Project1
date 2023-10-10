@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Adoption</title>
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,11 @@
         <a href="#"> Only cats</a>
         <a href="#"> Only rabbits</a>
     </div>
+    
     <div class="animals">
+    </div>
+
+    <template id="animal-card">
         <div class="animal-card">
             <div class="animal-card-text">
                 <h3>Meowsalot</h3>
@@ -34,7 +39,7 @@
                     alt="A cat named Meowsalot">
             </div>
         </div>
-    </div>
+    </template>
 </body>
 <footer id="footer" role="contentinfo"></footer>
 
