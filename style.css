@@ -54,6 +54,19 @@ body {
     border-radius: 4px;
     margin:4px;
 }
+
+.filter-nav .active{
+    /* background: linear-gradient(to left,rgb(204, 0, 255) ,#0059ff) ; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    text-decoration:underline;
+    font-weight: bold;
+}
+
+.filter-nav a:hover{
+    background: linear-gradient(to left,rgb(255, 236, 64) ,#ff7300);
+}
+
 .animals{
     max-width: 700px;
     margin:0 auto;
