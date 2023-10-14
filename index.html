@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animal Adoption</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script type="module" src="script.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="hero">
-        <h1>Welcome.</h1>
-        <h2>Our friends needs a home</h2>
+      <h1>Welcome.</h1>
+      <h2>Our friends needs a home</h2>
     </div>
 
     <div class="filter-nav">
-        <a href="#" data-filter="all">All Animal</a>
-        <a href="#" data-filter="dog"> Only dogs</a>
-        <a href="#" data-filter="cat"> Only cats</a>
-        <a href="#" data-filter="rabbit"> Only rabbits</a>
+      <a href="#" data-filter="all">All Animal</a>
+      <a href="#" data-filter="dog"> Only dogs</a>
+      <a href="#" data-filter="cat"> Only cats</a>
+      <a href="#" data-filter="rabbit"> Only rabbits</a>
     </div>
     <button>About Us</button>
     <button><a href="form.html">Put your animal for adoption</a></button>
-    <div class="animals">
-    </div>
+    <div class="animals"></div>
 
     <template id="animal-card">
-        <div class="animal-card">
-            <div class="animal-card-text">
-                <h3></h3>
-                <small><span class="age">3 Years old</span> - <span class="species">Cat</span></small>
-                <p class="description"></p>
-                <a href="#" class="primary-btn">Adopt <span class="name"></span></a>
-            </div>
-            <div class="animal-card-photo">
-                <img src="img/puppy1.jpg"
-                    alt="A cat named Meowsalot">
-            </div>
+      <div class="animal-card">
+        <div class="animal-card-text">
+          <h3></h3>
+          <small
+            ><span class="age">3 Years old</span> -
+            <span class="species">Cat</span></small
+          >
+          <p class="description"></p>
+          <a href="#" class="primary-btn">Adopt <span class="name"></span></a>
         </div>
+        <div class="animal-card-photo">
+          <img src="img/puppy1.jpg" alt="A cat named Meowsalot" />
+        </div>
+        <div class="pet-list"></div>
+      </div>
     </template>
-</body>
-<footer id="footer" role="contentinfo"></footer>
-
+  </body>
+  <footer id="footer" role="contentinfo"></footer>
 </html>

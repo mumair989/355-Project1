@@ -1,5 +1,29 @@
 const petPromise = await fetch("animals.json")
 const pets = await petPromise.json()
+// Arup Changes
+/*
+fetch('pets.json')
+  .then(response => response.json())
+  .then(data => {
+    // data contains the parsed JSON
+  });
+  const submissions = data.submissions;
+  submissions.forEach(sub => {
+
+    const petHTML = `
+      <div class="pet">
+        <h2>${sub.petName}</h2>
+        <img src="${sub.petImg}" alt="${sub.petName} image">
+        <p>${sub.petDescription}</p>
+        <p>Submitted by ${sub.name}</p>
+      </div>
+    ;
+  
+    document.querySelector('.pet-list').innerHTML += petHTML;
+  
+  });
+// -- Arup changes ends
+*/
 
 const template = document.querySelector("#animal-card")
 const wrapper = document.createElement("div")
@@ -68,3 +92,41 @@ function filterPets(species){
     }
 
 }
+// Arup - Created from here
+// Get form data
+const form = document.querySelector('form');
+const formData = new FormData(form);
+
+// Map form data to JSON object
+const pet = {
+  id: Date.now(), 
+  name: formData.get('name'),
+  email: formData.get('email'),
+  phone: formData.get('phone'),
+  pet_name: formData.get('pet_name'),
+  species: formData.get('species'),
+  description: formData.get('description'),
+  photo: formData.get('photo')  
+};
+
+// Open JSON file and parse data
+let jsonData = [];
+fetch('pets.json')
+  .then(response => response.json())
+  .then(data => {
+    jsonData = data;
+  });
+  
+// Add new pet object to array  
+jsonData.push(pet);
+
+// Stringify array back to JSON and save
+const updatedJson = JSON.stringify(jsonData);
+
+fetch('pets.json', {
+  method: 'PUT',
+  body: updatedJson
+});
+
+// Redirect to index.html
+window.location.href = 'index.html';
