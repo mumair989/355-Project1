@@ -4,57 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      body{
-        background: linear-gradient(to left, rgb(204, 0, 255), #0059ff);
-        color:white;
-        font-weight: bold;
-      }
-      form {
-        max-width: 500px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        background: linear-gradient(to left, rgb(238, 197, 248), #2a3852);
-      }
-
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-
-      input,
-      select,
-      textarea {
-        width: 90%;
-        padding: 10px;
-        border-radius: 4px;
-        border: 1px solid #ddd;
-        margin-bottom: 20px;
-      }
-
-      button[type="submit"] {
-        background-color: #4caf50;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        padding: 12px 20px;
-        cursor: pointer;
-      }
-      a{
-        text-decoration: none;
-        color:white
-      }
-
-      button[type="submit"]:hover {
-        background-color: #45a049;
-      }
-   
-    </style>
+    <script src="submit.js"></script>
+    <link rel="stylesheet" href="FormStyle.css">
+    
   </head>
   <body>
-    <form action="submit.js" method="POST">
+    <form action="/submit.js" method="POST">
       <fieldset>
         <legend>About You</legend>
 
@@ -87,6 +42,9 @@
           <option value="rabbit">Rabbit</option>
         </select>
 
+        <label for="pet_age">Pet's Birth Year:</label>
+        <input type="text" id="pet_age" name="pet_age" required />
+
         <label for="description">Pet Description:</label>
         <textarea id="description" name="description" required></textarea>
 
@@ -95,7 +53,7 @@
       </fieldset>
 
       <button type="submit">Submit</button>
-      <button type="submit"><a href="index.html">Cancel</a></button>
+      <button type="button"><a href="index.html">Cancel</a></button>
     </form>
   </body>
 </html>
