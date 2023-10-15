@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+    <script src="submit.js"></script>
+    <link rel="stylesheet" href="FormStyle.css">
     
-</body>
+  </head>
+  <body>
+    <form action="/submit.js" method="POST">
+      <fieldset>
+        <legend>About You</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        />
+      </fieldset>
+
+      <fieldset>
+        <legend>About Your Pet</legend>
+
+        <label for="pet_name">Pet's Name:</label>
+        <input type="text" id="pet_name" name="pet_name" required />
+
+        <label for="species">Species:</label>
+        <select id="species" name="species" required>
+          <option value="">--Please choose--</option>
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="rabbit">Rabbit</option>
+        </select>
+
+        <label for="pet_age">Pet's Birth Year:</label>
+        <input type="text" id="pet_age" name="pet_age" required />
+
+        <label for="description">Pet Description:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="photo">Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" />
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="button"><a href="index.html">Cancel</a></button>
+    </form>
+  </body>
 </html>
