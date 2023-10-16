@@ -5,7 +5,7 @@ body {
   background-color: rgb(190, 188, 188);
 }
 header {
-  transition: background-color 10s; /* Adjust the time as needed */
+  transition: background-color 1s; /* Adjust the time as needed */
 }
 header.hero {
   /* background-image: url("img/about-hero.jpg"); */ 

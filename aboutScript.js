@@ -14,4 +14,4 @@ function changeHeaderColorRandomly() {
 
 
 // Change color every 5 seconds (or adjust the interval as needed)
-setInterval(changeHeaderColorRandomly, 5000);
+setInterval(changeHeaderColorRandomly, 2000);
