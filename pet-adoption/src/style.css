@@ -1,0 +1,133 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to left, rgb(204, 0, 255), #0059ff);
+}
+
+body {
+  font-family: "Helvetica Neue";
+  position: relative;
+}
+
+.hero {
+  background: linear-gradient(to right, rgb(204, 0, 255), #0059ff);
+  color: white;
+  padding: 50px 30px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to left, rgb(204, 0, 255), #0059ff);
+}
+
+.hero h1 {
+  font-weight: normal;
+  font-size: 6rem;
+  margin: 0;
+}
+.hero h2 {
+  font-weight: normal;
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.filter-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filter-nav a {
+  text-decoration: none;
+  padding: 9px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(160, 160, 252);
+  background: linear-gradient(to left, rgb(255, 0, 0), #ff7300);
+  border-radius: 4px;
+  margin: 4px;
+}
+
+.filter-nav .active {
+  /* background: linear-gradient(to left,rgb(204, 0, 255) ,#0059ff) ; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.filter-nav a:hover {
+  background: linear-gradient(to left, rgb(255, 236, 64), #ff7300);
+}
+
+.animals {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.animal-card {
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: 200px 1fr;
+  background-color: rgb(255, 255, 255);
+  color:black;
+  border-radius: 20px;
+  overflow: hidden; /*To make the image have a round border*/
+}
+/* changes the order of the photo and text flips them */
+.animal-card-photo {
+  order: 1;
+  grid-row: 1;
+  overflow: hidden;
+}
+
+.animal-card-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*makes the image fit perfectly without stretch */
+  transition: transform 0.3s linear;
+}
+.animal-card:hover img {
+  transform: rotate(20deg) scale(1.4);
+}
+.animal-card-text {
+  padding: 20px 25px;
+}
+.animal-card-text h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+.animal-card-text small {
+  color: rgb(176, 176, 176);
+}
+.animal-card-text p {
+  margin: 0.8rem 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.primary-btn {
+  background: linear-gradient(to left, rgb(204, 0, 255), #0059ff);
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+.primary-btn:hover {
+  background: linear-gradient(to left, rgb(255, 0, 0), #ff7300);
+}
+/* footer{
+    margin-top:100px;
+    height: 50px;
+    background:linear-gradient(to left,rgb(204, 0, 255) ,#0059ff);
+} */
