@@ -1,0 +1,54 @@
+
+body{
+    background: linear-gradient(to left, rgb(82, 36, 94), #82a9f2);
+    color:white;
+    font-weight: bold;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: linear-gradient(to left, rgb(238, 197, 248), #2a3852);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color:white
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}

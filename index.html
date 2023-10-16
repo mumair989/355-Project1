@@ -20,8 +20,10 @@
       <a href="#" data-filter="cat"> Only cats</a>
       <a href="#" data-filter="rabbit"> Only rabbits</a>
     </div>
-    <button><a href="aboutMe.html">About Us</a></button>
-    <button><a href="form.html">Put your animal for adoption</a></button>
+    <div class="buttons-top-right">
+      <button id="aboutMeBtn"><a href="aboutMe.html">About Us</a></button>
+      <button id="formBtn"><a href="form.html">Put your animal for adoption</a></button>
+    </div>
     <div class="animals"></div>
 
     <template id="animal-card">
@@ -33,7 +35,7 @@
             <span class="species">Cat</span></small
           >
           <p class="description"></p>
-          <a href="#" class="primary-btn">Adopt <span class="name"></span></a>
+          <a href="checkout.html" class="primary-btn">Adopt <span class="name"></span></a>
         </div>
         <div class="animal-card-photo">
           <img src="img/puppy1.jpg" alt="A cat named Meowsalot" />

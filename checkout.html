@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <script src="submit.js"></script>
+    <link rel="stylesheet" href="checkoutStyle.css">
+</head>
+
+<body>
+    <form action="/submit.js" method="POST">
+        
+        <fieldset>
+            <legend>Billing Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required />
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required />
+
+            <label for="zip">ZIP Code:</label>
+            <input type="text" id="zip" name="zip" required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Shipping Information</legend>
+            <!-- The fields can be similar to billing but for shipping. 
+                 You could also have an option like 'Same as billing'. -->
+
+            <label for="s_address">Address:</label>
+            <textarea id="s_address" name="s_address" required></textarea>
+
+            <label for="s_city">City:</label>
+            <input type="text" id="s_city" name="s_city" required />
+
+            <label for="s_zip">ZIP Code:</label>
+            <input type="text" id="s_zip" name="s_zip" required />
+        </fieldset>
+
+        <fieldset>
+            <legend>Payment Information</legend>
+
+            <label for="card_name">Name on Card:</label>
+            <input type="text" id="card_name" name="card_name" required />
+
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number" required />
+
+            <label for="expiry">Expiration Date:</label>
+            <input type="month" id="expiry" name="expiry" required />
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required />
+        </fieldset>
+
+        <div>
+            <input type="checkbox" id="terms" name="terms" required />
+            <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+        </div>
+
+        <button type="submit"><a href="index.html">Complete Purchase</a></button>
+        <button type="button"><a href="index.html">Cancel</a></button>
+    </form>
+</body>
+
+</html>

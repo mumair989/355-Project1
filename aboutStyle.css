@@ -18,6 +18,23 @@ header.hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
+#home{
+  background: linear-gradient(to left, rgb(255, 93, 93), #ff7300);
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buttons-top-right {
+  position: absolute; /* or 'fixed' if you want it to stay top right even when scrolling */
+  top: 10px;  /* adjust as needed */
+  right: 10px;  /* adjust as needed */
+  display: flex;
+  gap: 5px; /* space between buttons */
+}
 
 .about-content {
   display: flex;
